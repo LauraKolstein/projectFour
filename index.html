@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>What's for dinner tonight?</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="styles/style.css">	
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">	
+	<link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Open+Sans" rel="stylesheet">
+</head>
+
+<body>
+	<main>
+		<div class="wrapper">
+			<header>
+				<h1>What's for dinner tonight?</h1>
+			</header>
+			<section>
+				<p>Not sure what to make for dinner? Simply enter some ingredients and let <span class="title">What's for Dinner Tonight?</span> decide for you.</p>
+				<form class="recipeForm" id="input">
+		    		<input class="form-control input-lg" type="text" placeholder="Add ingredients (separated by commas) ...">
+		    		<button class="getRecipes" type="submit">Get Recipes</button>
+		   		</form>
+			</section>
+			<section>		
+				<div class="container" id="recipe"></div> 	
+			</section>
+		</div>	
+	</main>
+
+    <footer>
+    		<p><a class="website" href="http://www.laurakolstein.com" target="_blank">© laurakolstein.com 2017</a></p>
+    </footer>	 	
+
+  	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  	<script src="https://www.gstatic.com/firebasejs/3.7.0/firebase.js"></script>
+  	<script src="scripts/script.js"></script>
+
+</body>
+</html>
